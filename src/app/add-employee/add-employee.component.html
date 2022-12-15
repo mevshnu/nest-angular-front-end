@@ -1,39 +1,46 @@
 <app-admin-nav></app-admin-nav>
 <div class="container">
     <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
             <div class="row g-3 mt-4">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <h1 class="text-dark">Add Employee</h1>
+                </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">empCode</label>
+                    <label for="" class="form-label">Employee Code</label>
                     <input name="empCode" [(ngModel)]="empCode" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">name</label>
+                    <label for="" class="form-label">Employee Name</label>
                     <input name="empName" [(ngModel)]="empName" type="text" class="form-control">
                 </div>
+            
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">email</label>
-                    <input name="empEmail" [(ngModel)]="empEmail" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">phone</label>
+                    <label for="" class="form-label">Phone Number</label>
                     <input name="empPhone" [(ngModel)]="empPhone" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">designation</label>
+                    <label for="" class="form-label">Designation</label>
                     <input name="empDesignation" [(ngModel)]="empDesignation" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">username</label>
+                    <label for="" class="form-label">Email</label>
+                    <input name="empEmail" [(ngModel)]="empEmail" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Username</label>
                     <input name="username" [(ngModel)]="username" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">email</label>
-                    <input name="email" [(ngModel)]="email" type="text" class="form-control">
+                    <label for="" class="form-label">Password</label>   
+                    <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
+   
+                   </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="readValues()" class="btn btn-dark">Register User</button>
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button (click)="readValues()" class="btn btn success">Add</button>
-                </div>
+            
             </div>
         </div>
     </div>

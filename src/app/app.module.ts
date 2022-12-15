@@ -11,27 +11,103 @@ import { HttpClientModule } from '@angular/common/http';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import {MatCardModule} from '@angular/material/card';
+
 import {MatInputModule} from '@angular/material/input';
+import { LeaveComponent } from './leave/leave.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { SecurityNavComponent } from './security-nav/security-nav.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { ApplayLeaveComponent } from './applay-leave/applay-leave.component';
+import { EmployeeNavComponent } from './employee-nav/employee-nav.component';
+import { CreateLogComponent } from './create-log/create-log.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { ViwAdminEmployeelogComponent } from './viw-admin-employeelog/viw-admin-employeelog.component';
+import { ViwAdminVisitorlogComponent } from './viw-admin-visitorlog/viw-admin-visitorlog.component';
+import { ViewEmployeeLogComponent } from './view-employee-log/view-employee-log.component';
+import { ViewSecEmployeeLogComponent } from './view-sec-employee-log/view-sec-employee-log.component';
+import { ViewSecVisitorLogComponent } from './view-sec-visitor-log/view-sec-visitor-log.component';
+import { VisitorLogComponent } from './visitor-log/visitor-log.component';
+import { ViewEmployeeLeaveComponent } from './view-employee-leave/view-employee-leave.component';
 
 const myroute:Routes=[
   {
-    path:"addemployee",
-    component:AddEmployeeComponent
+    path: "",
+    component: AdminLoginComponent
   },
   {
-  path:"addsecurity",
-  component:AddSecurityComponent
+    path:"addEmployee",
+    component: AddEmployeeComponent
   },
   {
-  path:"adminlogin",
-  component:AddSecurityComponent
-  },
-  {
-    path:"viewemployee",
+    path:"viewEmployee",
     component:ViewEmployeeComponent
   },
+  {
+    path: "editEmployee",
+    component: EditEmployeeComponent
+  },
+  {
+    path: "addSecurity",
+    component: AddSecurityComponent
+  },
+  {
+    path:"viewLeaves",
+    component:LeaveComponent
+  },
+  {
+    path:"securityLogin",
+    component:SecurityLoginComponent
+  },
+  {
+    path:"viewSecurityProfile",
+    component: ViewProfileComponent
+  },
+  {
+    path:"employeeLog",
+    component: CreateLogComponent
+  },
+  {
+    path:"visitorLog",
+    component: VisitorLogComponent
+  },
+  {
+    path:"employeeLogin",
+    component: EmployeeLoginComponent
+  },
+  {
+    path:"employeeProfile",
+    component: EmployeeProfileComponent
+  },
+  {
+    path:"applyLeave",
+    component: ApplayLeaveComponent
+  },  
+  {
+    path:"viewEmployeeLeave",
+    component: ViewEmployeeLeaveComponent
+  },
+  {
+    path:"viewEmployeeLog",
+    component: ViewEmployeeLogComponent
+  },
+  {
+    path:"viewSecEmpLog",
+    component: ViewSecEmployeeLogComponent
+  },
+  {
+    path:"viewSecVisLog",
+    component: ViwAdminVisitorlogComponent
+  },
+  {
+    path:"viewAdminEmpLog",
+    component: ViwAdminEmployeelogComponent
+  },
+  {
+    path:"viewAdminVisLog",
+    component: ViwAdminVisitorlogComponent
+  }
   
 
 ]
@@ -44,7 +120,23 @@ const myroute:Routes=[
     AdminLoginComponent,
     AdminNavComponent,
     ViewEmployeeComponent,
-    MatInputModule
+    LeaveComponent,
+    SecurityLoginComponent,
+    SecurityNavComponent,
+    ViewProfileComponent,
+    ApplayLeaveComponent,
+    EmployeeNavComponent,
+    CreateLogComponent,
+    EditEmployeeComponent,
+    EmployeeLoginComponent,
+    EmployeeProfileComponent,
+    ViwAdminEmployeelogComponent,
+    ViwAdminVisitorlogComponent,
+    ViewEmployeeLogComponent,
+    ViewSecEmployeeLogComponent,
+    ViewSecVisitorLogComponent,
+    VisitorLogComponent,
+    ViewEmployeeLeaveComponent
   ],
   imports: [
     BrowserModule,
@@ -52,8 +144,8 @@ const myroute:Routes=[
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(myroute),
-    BrowserAnimationsModule,
-    MatCardModule
+    
+    
     
   ],
   providers: [],

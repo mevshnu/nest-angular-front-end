@@ -31,9 +31,9 @@ export class AddSecurityComponent {
           this.phone=""
           this.username=""
           this.password=""
-          alert("Security added successfully")
+          alert("New Security added successfully")
         }else{
-          alert("Error in adding security")
+          alert("Error,Theres some problem")
         }
       }
     )

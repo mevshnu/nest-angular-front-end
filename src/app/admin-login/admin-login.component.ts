@@ -10,12 +10,12 @@ export class AdminLoginComponent {
 
   username=""
   password=""
-  constructor(private routed:Router){}
+  constructor(private routed:Router){ localStorage.removeItem("userInfo")}
   readlogin=()=>
   {
     let data:any={"username":this.username,"password":this.password}
   console.log(data)
-  if( this.username == "admin" && this.password=="nestdigital")
+  if( this.username == "admin" && this.password=="12345")
   {
   this.routed.navigate(["/addEmployee"])
   }

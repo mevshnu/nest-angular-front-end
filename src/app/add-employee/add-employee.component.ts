@@ -36,9 +36,9 @@ export class AddEmployeeComponent {
         this.empDesignation=""
         this.username=""
         this.password=""
-        alert("Employee Added Successfully")
+        alert("New Employee Added Successfully")
       }else{
-        alert("Error in adding employee")
+        alert("Error,Theres some problem")
       }
     }
    )

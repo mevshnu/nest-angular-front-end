@@ -1,0 +1,46 @@
+<app-admin-nav></app-admin-nav>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h1 class="text-center text-primary mb-4">Leave portal</h1>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-5">
+                    <table class="table justify-content-center table-striped table-bordered mb-5">
+                        <thead >
+                            <tr>
+                                <th class="text-center" scope="col">Code</th>
+                                <th class="text-center" scope="col">Name</th>
+                                <th class="text-center" scope="col">Leave Type</th>
+                                <th class="text-center" scope="col">From</th>
+                                <th class="text-center" scope="col">To</th>
+                                <th class="text-center" scope="col">Applied Date</th>
+                                <th class="text-center" scope="col">Remarks</th>
+                                <th class="text-center" scope="col">Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                <tr *ngFor="let i of leaves">
+                                    <td class="text-center">{{i.emp_code}}</td>
+                                    <td class="text-center">{{i.name}}</td>
+                                    <td class="text-center">{{i.leave_type}}</td>
+                                    <td class="text-center">{{i.from_date}}</td>
+                                    <td class="text-center">{{i.to_date}}</td>
+                                    <td class="text-center">{{i.apply_date}}</td>
+                                    <td class="text-center">{{i.remarks}}</td>
+                                    
+                                    <td style="width: 13rem;" class="text-center">
+                                        <button class="btn btn-success mx-2" (click)="updateStatus(i.id,i.empId,1,i.leave_type,i.from_date,i.to_date)">Approve</button>
+                                        <button class="btn btn-danger" (click)="updateStatus(i.id,i.empId,-1,i.leave_type,i.from_date,i.to_date)">Reject</button>
+                                    </td>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
